@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F7F1E5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#about-hero {
+    text-align: center;
+    color: #fff;
+    padding: 100px 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+#about-hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#about-hero h3 {
+    font-size: 24px;
+}
+
+#about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.about-section.left .text-content {
+    margin-right: auto;
+    margin-left: 0;
+    text-align: left;
+}
+
+.about-section.right .text-content {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    color: #3E2723;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-section.left .text-content,
+    .about-section.right .text-content {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+footer {
+    background-color: #3E2723;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    #about-hero {
+        padding: 50px 10px;
+    }
+
+    #about-hero h2 {
+        font-size: 32px;
+    }
+
+    #about-hero h3 {
+        font-size: 18px;
+    }
+
+    #about-content {
+        padding: 30px 10px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .about-section h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .about-section p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .about-section.left .text-content,
+    .about-section.right .text-content {
+        margin: 0;
+        text-align: center;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+

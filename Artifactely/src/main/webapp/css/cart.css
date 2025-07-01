@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F7F1E5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #3E2723;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead th {
+    background-color: #F7F1E5;
+    padding: 10px;
+    border-bottom: 2px solid #d4b89b;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #d4b89b;
+}
+
+tfoot td {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.total-label {
+    text-align: right;
+}
+
+.total-value {
+    text-align: left;
+}
+
+.update-form, .remove-form {
+    display: inline-block;
+}
+
+.update-form input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.update-form button, .remove-form button {
+    padding: 5px 10px;
+    background-color: #E09777;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.update-form button:hover, .remove-form button:hover {
+    background-color: #E07363;
+}
+
+.checkout {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.checkout-button {
+    padding: 10px 20px;
+    background-color: #3E2723;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.checkout-button:hover {
+    background-color: #5D4037;
+}
+
+.cart-product-image {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        margin-bottom: 15px;
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #d4b89b;
+    }
+
+    .total-label, .total-value {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        margin-bottom: 15px;
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #d4b89b;
+    }
+
+    .cart-product-image {
+        width: 60px;
+        height: auto;
+    }
+
+    .update-form input[type="number"] {
+        width: 50px;
+        padding: 5px;
+    }
+
+    .update-form button, .remove-form button {
+        padding: 5px;
+    }
+
+    .checkout {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .checkout-button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .total-label, .total-value {
+        text-align: left;
+        width: 100%;
+    }
+}

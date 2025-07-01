@@ -1,0 +1,139 @@
+/* signup.css */
+
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F7F1E5;
+    color: #333;
+}
+
+.signup-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 60px 20px;
+    background-color: #fff;
+    border: 2px solid #d4b89b;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.signup-container h1 {
+    font-size: 2.5em;
+    color: #3E2723;
+    margin-bottom: 30px;
+    font-family: 'Garamond', serif;
+}
+
+.error-messages {
+    background-color: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.error-messages ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.error-messages li {
+    font-size: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+form label {
+    font-size: 1.2em;
+    color: #3E2723;
+}
+
+form input {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #d4b89b;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form input:focus {
+    border-color: #E07363;
+    outline: none;
+}
+
+form button {
+    background-color: #E09777;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+form button:hover {
+    background-color: #E07363;
+    transform: scale(1.05);
+}
+
+p {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #666;
+    text-align: center;
+}
+
+p a {
+    color: #E07363;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .signup-container {
+        max-width: 90%;
+    }
+
+    .signup-container h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .signup-container {
+        max-width: 100%;
+        padding: 40px 15px;
+    }
+
+    .signup-container h1 {
+        font-size: 1.8em;
+    }
+
+    form label {
+        font-size: 1em;
+    }
+
+    form input {
+        padding: 8px;
+    }
+
+    form button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,151 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F7F1E5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #3E2723;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.user-info, .logout-button, .purchase-history {
+    margin-bottom: 30px;
+}
+
+.user-info {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #d4b89b;
+    border-radius: 8px;
+}
+
+.user-info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.user-info button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #E09777;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-info button:hover {
+    background-color: #E07363;
+}
+
+.logout-button {
+    text-align: right;
+}
+
+.logout-button button {
+    padding: 10px 20px;
+    background-color: #A24D4A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-button button:hover {
+    background-color: #8C3E3B;
+}
+
+.purchase-history h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.orders {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #d4b89b;
+    border-radius: 8px;
+}
+
+.order h3 {
+    margin-top: 0;
+    color: #3E2723;
+}
+
+.order-info, .order-products {
+    margin-top: 15px;
+}
+
+.order-info p, .order-products p {
+    margin: 5px 0;
+}
+
+.order-products ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-products li {
+    background-color: #F7F1E5;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d4b89b;
+    border-radius: 5px;
+}
+
+.order-products li p {
+    margin: 5px 0;
+}
+
+.no-orders {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
+
+.error-message {
+    text-align: center;
+    font-size: 18px;
+    color: red;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+
+    .user-info, .order {
+        padding: 15px;
+    }
+
+    .logout-button {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .logout-button button {
+        width: 100%;
+    }
+}
